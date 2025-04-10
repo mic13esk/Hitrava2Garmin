@@ -26,7 +26,7 @@ Since Strava have currently a 100 activity import / day limit, importing many ac
 - [Features](#features)
 - [Installation](#installation)
 - [How2Use](#usage)
-- [What the script does](#doing)
+- [What the script does](#WhatItDoes)
 
 ## Features
 Main reasons for Hitrava converted files not being able to import directly to Garmin Connect:
@@ -46,7 +46,7 @@ Developed and tested on Python: Python 3.11.4
 ## Usage
 python HitravaConvert2Garmin.py
 
-## Doing - What the script does
+## WhatItDoes
 First of all, the script does nothing to the original files.
 
 1. Identifies the unique files (if there are more than 1 file for each activity) and copied the file to subfolder "UniqueFiles"
