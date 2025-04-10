@@ -1,6 +1,31 @@
 ## Hitrava2Garmin
   
-### Background
+### Why the need of this?
+I had been using Huawei bands and watches for quire some time.
+I felt locked down when not being able to view my training activities online, and not being able to export them.
+Glanced at Garmin, and when I had some issues with my latest Huawei watch i decided to move to the Garmin ecosystem.
+
+Now came the issue, there was no way of converting Huawei activities to Garmin!
+After some googling i found Hitrava that did just that. Almost at least.
+With Hitrava I could export all my activities to a format that could be imported to Strava and from there export to a Garmin-readable format.
+A lot of converting to do, but it worked.
+After converting 1000 activities the work was done.
+
+When a friend of mine wanted to do the exact same journey, I wanted to find a better way to handle this.
+
+### Special thanks to Hitrava!
+Without Hitrava I wouldnt have been able to export my Huawei data at all!
+
+### Intro
+Hitrava2Garmin changes the Hitrava export so that the activities can be imported into Garmin directly.
+No need to import them to Strava first.
+Since Strava have currently a 100 activity import / day limit, importing many activities will cost a lot of hours and frustration.
+
+## Table of Contents
+- [Introduction](#introduction)  
+- [Features](#features)
+
+## Features
 
 HitravaConvert2Garmin
 version 0.1
