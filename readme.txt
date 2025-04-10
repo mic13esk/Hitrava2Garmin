@@ -72,3 +72,7 @@ HiTrack_20190520_010556_001.tcx
 
 To run application: (in the same directory as the Hitrava export files are located)
 python HitravaConvert2Garmin.py
+
+Make sure to have 2 subfolders:
+ConvertedFiles
+UniqueFiles
