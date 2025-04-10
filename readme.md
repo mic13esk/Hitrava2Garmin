@@ -55,21 +55,21 @@ First of all, the script does nothing to the original files.
 Hitrava: (import to garmin with this info does not work)
 <?xml version="1.0"?>
 <TrainingCenterDatabase
- xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd"    xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2"
- xmlns:xsd="http://www.w3.org/2001/XMLSchema"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
-
+xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd"    xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+ 
 Garmin Connect: (this is according to Garmin TCX schema and is OK to import with)
 <?xml version="1.0" encoding="UTF-8"?>
 <TrainingCenterDatabase
-  xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd"
-  xmlns:ns5="http://www.garmin.com/xmlschemas/ActivityGoals/v1"
-  xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2"
-  xmlns:ns2="http://www.garmin.com/xmlschemas/UserProfile/v2"
-  xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:ns4="http://www.garmin.com/xmlschemas/ProfileExtension/v1">
+xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd"
+xmlns:ns5="http://www.garmin.com/xmlschemas/ActivityGoals/v1"
+xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2"
+xmlns:ns2="http://www.garmin.com/xmlschemas/UserProfile/v2"
+xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:ns4="http://www.garmin.com/xmlschemas/ProfileExtension/v1">
 
 3. Updating Activity names
 Seems like Garmin Connect needs to have the activities in Capital starting letter.
