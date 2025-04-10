@@ -27,6 +27,7 @@ Since Strava have currently a 100 activity import / day limit, importing many ac
 - [Installation](#installation)
 - [How2Use](#usage)
 - [What the script does](#WhatItDoes)
+- [Ready to import](#Ready2Go)
 
 ## Features
 Main reasons for Hitrava converted files not being able to import directly to Garmin Connect:
@@ -111,4 +112,5 @@ Also related to the HeartRate-graph in Garmin Connect, i added one extension, si
 </Extensions>
 ```
 
-Activities are not possible to import to Garmin Connect
+### Ready2Go
+Activities are now ready to import to Garmin Connect
