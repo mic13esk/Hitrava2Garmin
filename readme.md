@@ -22,11 +22,55 @@ No need to import them to Strava first.
 Since Strava have currently a 100 activity import / day limit, importing many activities will cost a lot of hours and frustration.
 
 ## Table of Contents
-- [Introduction](#introduction)  
+- [Introduction](#intro)  
 - [Features](#features)
+- [Installation](#installation)
+- [How2Use](#usage)
+- [What the script does](#doing)
 
 ## Features
+Main reasons for Hitrava converted files not being able to import directly to Garmin Connect:
 
+1. Missing correct header declarations
+2. Activity names
+3. Timeformat issues
+4. If missing heartratebpm at every trackpoint, the heartrate graph will not be shown correctly
+
+## Installation
+All you need is the Python-script and 2 subdolders.
+ConvertedFiles
+UniqueFiles
+Place the Hitrava files in the same directory as the Python-script
+Developed and tested on Python: Python 3.11.4
+
+## Usage
+python HitravaConvert2Garmin.py
+
+## Doing
+First of all, the script does nothing to the original files.
+
+1. Identifies the unique files (if there are more than 1 file for each activity) and copied the file to subfolder "UniqueFiles"
+2. Corrects the header-information in the files
+### Updating the header
+Hitrava: (import to garmin with this info does not work)
+<?xml version="1.0"?>
+<TrainingCenterDatabase
+ xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd"    xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+
+Garmin Connect: (this is according to Garmin TCX schema and is OK to import with)
+<?xml version="1.0" encoding="UTF-8"?>
+<TrainingCenterDatabase
+  xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd"
+  xmlns:ns5="http://www.garmin.com/xmlschemas/ActivityGoals/v1"
+  xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2"
+  xmlns:ns2="http://www.garmin.com/xmlschemas/UserProfile/v2"
+  xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ns4="http://www.garmin.com/xmlschemas/ProfileExtension/v1">
+3. 
 HitravaConvert2Garmin
 version 0.1
 2025-04-03
@@ -38,14 +82,9 @@ conversion_log.txt
   ConvertedFiles/
   UniqueFiles/
 
-Developed and tested on Python: Python 3.11.4
 
-Main reasons for Hitrava converted files not being able to import directly to Garmin Connect:
 
-1. Missing correct header declarations
-2. Activity names
-3. Timeformat issues
-4. If missing heartratebpm at every trackpoint, the heartrate graph will not be shown correctly
+
 
 1. Missing correct header declarations
 Hitrava: (import to garmin with this info does not work)
