@@ -50,6 +50,7 @@ python HitravaConvert2Garmin.py
 First of all, the script does nothing to the original files.
 
 1. Identifies the unique files (if there are more than 1 file for each activity) and copied the file to subfolder "UniqueFiles"
+
 2. Corrects the header-information in the files
 Hitrava: (import to garmin with this info does not work)
 <?xml version="1.0"?>
@@ -69,6 +70,7 @@ Garmin Connect: (this is according to Garmin TCX schema and is OK to import with
   xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:ns4="http://www.garmin.com/xmlschemas/ProfileExtension/v1">
+
 3. Updating Activity names
 Seems like Garmin Connect needs to have the activities in Capital starting letter.
 Activities will be imported, but classified as "other" and not the actual activity
@@ -76,12 +78,14 @@ Not "OK":
 <Activity Sport="biking">
 OK:
 <Activity Sport="Biking">
+
 4. Correcting timezone issues
 Garmin will not import activities with a timeformat other than:
 2025-03-28T15:22:38.000Z
 example:
 From: 2025-01-08T16:54:38.000+0100
 To: 2025-01-08T15:54:38.000z
+
 5. Adds missing HeartRateBMPs in every <Trackpoint>
 Adds missing HeartRateBMP if missing from a Trackpoint(if missing, the script copies the latest value)
 Also related to the HeartRate-graph in Garmin Connect, i added one extension, since this is believed to be present for the graph to be created.
